@@ -131,7 +131,7 @@
                         <version>3.4.4</version>
                         <configuration>
                             <from>
-                                <image>openjdk:11</image>
+                                <image>amazoncorretto:23</image>
                             </from>
                             <container>
                                 <ports>
