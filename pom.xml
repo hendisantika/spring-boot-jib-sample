@@ -102,9 +102,8 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>3.4.4</version>
                 <configuration>
-                    <!--                    <mainClass>id.my.hendisantika.jibsample.SpringBootJibSampleApplication</mainClass>-->
                     <from>
-                        <image>openjdk:11</image>
+                        <image>openjdk:21</image>
                     </from>
                     <container>
                         <ports>

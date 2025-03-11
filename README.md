@@ -25,6 +25,7 @@
 
 ```shell
 mvn -Dcontainer.mainClass=id.my.hendisantika.jibsample.SpringBootJibSampleApplication clean install jib:dockerBuild -Djib.to.image=springboot-jib:v1
+
 ```
 
 * Maven command to push image to the registry
