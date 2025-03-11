@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 @RequestMapping(path = "api/v1/customers")
 public class CustomerController {
 
-    @GetMapping("all")
+    @GetMapping
     public List<Customer> getAllCustomers() throws Exception {
         List<Customer> customerList = MockData.getCustomers();
         return customerList;

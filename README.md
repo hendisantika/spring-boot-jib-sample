@@ -24,13 +24,13 @@
 * Maven command to push image locally
 
 ```shell
-mvnw clean install jib:dockerBuild -Djib.to.image=springboot-jib:v1
+mvn -Dcontainer.mainClass=id.my.hendisantika.jibsample.SpringBootJibSampleApplication clean install jib:dockerBuild -Djib.to.image=springboot-jib:v1
 ```
 
 * Maven command to push image to the registry
 
 ```shell
-mvnw clean install jib:build -Djib.to.image=miliariadnane/springboot-jib:v1 -Djib.to.auth.username=your_username -Djib.to.auth.password=your_password
+mvn clean install jib:build -Djib.to.image=miliariadnane/springboot-jib:v1 -Djib.to.auth.username=your_username -Djib.to.auth.password=your_password
 ```
 
 4. Start the container
