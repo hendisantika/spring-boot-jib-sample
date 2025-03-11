@@ -1,7 +1,12 @@
 package id.my.hendisantika.jibsample.controller;
 
+import id.my.hendisantika.jibsample.mock.MockData;
+import id.my.hendisantika.jibsample.model.Customer;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -17,4 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path = "api/v1/customers")
 public class CustomerController {
+
+    @GetMapping("all")
+    public List<Customer> getAllCustomers() throws Exception {
+        List<Customer> customerList = MockData.getCustomers();
+        return customerList;
+    }
 }
