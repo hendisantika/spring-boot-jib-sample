@@ -20,6 +20,7 @@
         <commons.version>2.18.0</commons.version>
         <app.image.name>springboot-jib</app.image.name>
         <app.image.tag/>
+        <start-class>id.my.hendisantika.jibsample.SpringBootJibSampleApplication</start-class>
     </properties>
     <dependencies>
         <dependency>
