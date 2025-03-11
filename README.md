@@ -42,7 +42,7 @@ docker run --name springboot-jib -p 8080:8080 springboot-jib:v1
 
 5. APIs for testing :
 
-> 1st: https://localhost:8080/api/v1/customers/all
+> 1st: https://localhost:8080/api/v1/customers
 
 <br/>
 
