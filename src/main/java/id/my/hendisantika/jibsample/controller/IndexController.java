@@ -1,6 +1,7 @@
 package id.my.hendisantika.jibsample.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
@@ -19,6 +20,7 @@ import java.time.LocalDateTime;
 @Slf4j
 @RestController
 public class IndexController {
+    @RequestMapping("/")
     public String index() {
         log.info("Spring Boot Jib Sample {}", LocalDateTime.now());
         return "Spring Boot Jib Sample " + LocalDateTime.now();
