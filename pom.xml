@@ -14,7 +14,7 @@
     <name>spring-boot-jib-sample</name>
     <description>spring-boot-jib-sample</description>
     <properties>
-        <java.version>23</java.version>
+        <java.version>25</java.version>
         <guava.version>23.0</guava.version>
         <gson.version>2.14.0</gson.version>
         <commons.version>2.22.0</commons.version>
@@ -81,8 +81,7 @@
                             <artifactId>lombok</artifactId>
                         </path>
                     </annotationProcessorPaths>
-                    <source>23</source>
-                    <target>23</target>
+                    <release>${java.version}</release>
                 </configuration>
             </plugin>
             <plugin>
@@ -103,7 +102,7 @@
                 <version>3.5.2</version>
                 <configuration>
                     <from>
-                        <image>amazoncorretto:23</image>
+                        <image>amazoncorretto:25</image>
                     </from>
                     <container>
                         <ports>
@@ -130,7 +129,7 @@
                         <version>3.5.2</version>
                         <configuration>
                             <from>
-                                <image>amazoncorretto:23</image>
+                                <image>amazoncorretto:25</image>
                             </from>
                             <container>
                                 <ports>
@@ -182,7 +181,7 @@
                         <version>3.5.2</version>
                         <configuration>
                             <from>
-                                <image>openjdk:21</image>
+                                <image>amazoncorretto:25</image>
                             </from>
                             <container>
                                 <ports>
