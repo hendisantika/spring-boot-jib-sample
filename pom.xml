@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.1</version>
+        <version>4.1.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>id.my.hendisantika</groupId>
@@ -16,7 +16,7 @@
     <properties>
         <java.version>25</java.version>
         <guava.version>23.0</guava.version>
-        <gson.version>2.14.0</gson.version>
+        <gson.version>2.15.0</gson.version>
         <commons.version>2.22.0</commons.version>
         <app.image.name>springboot-jib</app.image.name>
         <app.image.tag/>
